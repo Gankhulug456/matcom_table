@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filament Comparison Table</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    
+</head>
+<body>
+    <div class="table-container">
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Filament Properties</th>
+                    <th>PPS-CF10</th>
+                    <th>PET-CF17</th>
+                    <th>PETG-rCF08</th>
+                    <th>PA6-CF20</th>
+                    <th>PA12-CF10</th>
+                    <th>PA612-CF15</th>
+                    <th>PA6-GF25</th>
+                    <th>PETG-ESD</th>
+
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td rowspan="6">Physical Properties</td>
+                    <td>Rigidity<br><small>Young's Modulus - XY</small></td>
+                    <td><div class="bar-container"><div class="bar" style="width: 97%;"></div></div> 53141.4 MPa</td>
+                    <td><div class="bar-container"><div class="bar" style="width: 100%;"></div></div> 5481.0 MPa</td>
+                    <td><div class="bar-container"><div class="bar" style="width: 68%;"></div></div> 37101.0 MPa</td>
+                    <td><div class="bar-container"><div class="bar" style="width: 46%;"></div></div> 2508.1 MPa</td>
+                    <td><div class="bar-container"><div class="bar" style="width: 57%;"></div></div> 31317.0 MPa</td>
+                    <td><div class="bar-container"><div class="bar" style="width: 73%;"></div></div> 3990.8 MPa</td>
+                    <td><div class="bar-container"><div class="bar" style="width: 33%;"></div></div> 1793.6 MPa</td>
+                    <td><div class="bar-container"><div class="bar" style="width: 66%;"></div></div> 1983.0 MPa</td>
+                </tr>
+                <tr>
+                    
+                    <td>Strength<br><small>Tensile Strength - XY</small></td>
+                    <td><div class="bar-container"><div class="bar" style="width: 39%;"></div></div> 32.0 MPa</td>
+                    <td><div class="bar-container"><div class="bar" style="width: 79%;"></div></div> 65.9 MPa</td>
+                    <td><div class="bar-container"><div class="bar" style="width: 72%;"></div></div> 59.8 MPa</td>
+                    <td><div class="bar-container"><div class="bar" style="width: 66%;"></div></div> 54.7 MPa</td>
+                    <td><div class="bar-container"><div class="bar" style="width: 86%;"></div></div> 71.7 MPa</td>
+                    <td><div class="bar-container"><div class="bar" style="width: 100%;"></div></div> 83.1 MPa</td>
+                    <td><div class="bar-container"><div class="bar" style="width: 48%;"></div></div> 40.2 MPa</td>
+                    <td><div class="bar-container"><div class="bar" style="width: 43%;"></div></div> 36.1 MPa</td>
+                </tr>
+                <tr>
+                    <td>Rigidity (z)<br><small>Young's Modulus - Z</small></td>
+                    <td><div class="bar-container"><div class="bar" style="width: 78%;"></div></div> 2790.0 MPa</td>
+                    <td><div class="bar-container"><div class="bar" style="width: 100%;"></div></div> 3558.8 MPa</td>
+                    <td><div class="bar-container"><div class="bar" style="width: 75%;"></div></div> 2651.9 MPa</td>
+                    <td><div class="bar-container"><div class="bar" style="width: 30%;"></div></div> 10561.0 MPa</td>
+                    <td><div class="bar-container"><div class="bar" style="width: 46%;"></div></div> 1622.0 MPa</td>
+                    <td><div class="bar-container"><div class="bar" style="width: 67%;"></div></div> 2386.7 MPa</td>
+                    <td><div class="bar-container"><div class="bar" style="width: 33%;"></div></div> 1164.7 MPa</td>
+                    <td><div class="bar-container"><div class="bar" style="width: 46%;"></div></div> 1626.4 MPa</td>
+                </tr>
+                <tr>
+                    <td>Layer Adhesion<br><small>Tensile Strength - Z</small></td>
+                    <td><div class="bar-container"><div class="bar" style="width: 76%;"></div></div> 32 MPa</td>
+                    <td><div class="bar-container"><div class="bar" style="width: 66%;"></div></div> 27.9 MPa</td>
+                    <td><div class="bar-container"><div class="bar" style="width: 98%;"></div></div> 41.1 MPa</td>
+                    <td><div class="bar-container"><div class="bar" style="width: 61%;"></div></div> 25.5 MPa</td>
+                    <td><div class="bar-container"><div class="bar" style="width: 100%;"></div></div> 42.1 MPa</td>
+                    <td><div class="bar-container"><div class="bar" style="width: 85%;"></div></div> 35.6 MPa</td>
+                    <td><div class="bar-container"><div class="bar" style="width: 62%;"></div></div> 26.3 MPa</td>
+                    <td><div class="bar-container"><div class="bar" style="width: 49%;"></div></div> 20.7 MPa</td>
+                </tr>
+                <tr>
+                    <td>Impact Resistance<br><small>Charpy Impact Strength - XY Notched</small></td>
+                    <td><div class="bar-container"><div class="bar" style="width: 15%;"></div></div> 5.3 kJ/m²</td>
+                    <td><div class="bar-container"><div class="bar" style="width: 14%;"></div></div> 5.1 kJ/m²</td>
+                    <td><div class="bar-container"><div class="bar" style="width: 11%;"></div></div> 4.0 kJ/m²</td>
+                    <td><div class="bar-container"><div class="bar" style="width: 100%;"></div></div> 35.6 kJ/m²</td>
+                    <td><div class="bar-container"><div class="bar" style="width: 29%;"></div></div> 10.2 kJ/m²</td>
+                    <td><div class="bar-container"><div class="bar" style="width: 22%;"></div></div> 7.7 kJ/m²</td>
+                    <td><div class="bar-container"><div class="bar" style="width: 79%;"></div></div> 28.0 kJ/m²</td>
+                    <td><div class="bar-container"><div class="bar" style="width: 16%;"></div></div> 5.7 kJ/m²</td>
+                </tr>
+                <tr>
+                    <td>Impact Resistance<br><small>Charpy Impact Strength - XY Un-Notched</small></td>
+                    <td><div class="bar-container"><div class="bar" style="width: 100%;"></div>11.4 kJ/m²</td>
+                    <td><div class="bar-container"><div class="bar" style="width: 100%;"></div>25.1 kJ/m²</div></td>
+                    <td><div class="bar-container"><div class="bar" style="width: 100%;"></div>18 kJ/m²</div></td>
+                    <td><div class="bar-container"><div class="bar" style="width: 100%;"></div>kJ/m²</div></td>
+                    <td><div class="bar-container"><div class="bar" style="width: 100%;"></div>kJ/m²</div></td>
+                    <td><div class="bar-container"><div class="bar" style="width: 100%;"></div>kJ/m²</div></td>
+                    <td><div class="bar-container"><div class="bar" style="width: 100%;"></div>kJ/m²</div></td>
+                    <td><div class="bar-container"><div class="bar" style="width: 100%;"></div>kJ/m²</div></td>
+                </tr>
+                <tr>
+                    <td rowspan="6">Printing Requirements</td>
+                    <td>Drying Conditions</td>
+                    <td>100°C 10h</td>
+                    <td>100°C 10h</td>
+                    <td>65°C 3h</td>
+                    <td>100°C 10h</td>
+                    <td>100°C 10h</td>
+                    <td>100°C 10h</td>
+                    <td>100°C 10h</td>
+                    <td>65°C 3h</td>
+                </tr>
+                <tr>
+                    <td>Nozzle Temperature</td>
+                    <td>310-350°C</td>
+                    <td>270-300°C</td>
+                    <td>240-270°C</td>
+                    <td>PPS-CF10</td>
+                    <td>PPS-CF10</td>
+                    <td>PPS-CF10</td>
+                    <td>PPS-CF10</td>
+                    <td>PPS-CF10</td>
+                </tr>
+                <tr>
+                    <td>Heated Chamber Needed</td>
+                    <td><img src="SVGs/Vector.svg" alt="Icon 1" class="icon" /></td>
+                    <td><img src="SVGs/Vector.svg" alt="Icon 1" class="icon" /></td>
+                    <td><img src="SVGs/Vector.svg" alt="Icon 1" class="icon" /></td>
+                    <td><img src="SVGs/Vector.svg" alt="Icon 1" class="icon" /></td>
+                    <td><img src="SVGs/Vector.svg" alt="Icon 1" class="icon" /></td>
+                    <td><img src="SVGs/Vector.svg" alt="Icon 1" class="icon" /></td>
+                    <td><img src="SVGs/Vector.svg" alt="Icon 1" class="icon" /></td>
+                    <td><img src="SVGs/Vector.svg" alt="Icon 1" class="icon" /></td>
+                </tr>
+                <tr>
+                    <td>Enclosure Needed</td>
+                    <td>Recommended</td>
+                    <td>Recommended</td>
+                    <td>Recommended</td>
+                    <td>Recommended</td>
+                    <td>Recommended</td>
+                    <td>Recommended</td>
+                    <td>Recommended</td>
+                    <td>Recommended</td>
+                </tr>
+                <tr>
+                    <td>AMS Compatible</td>
+                    <td><img src="SVGs/yes.svg" alt="Icon 1" class="icon" /></td>
+                    <td><img src="SVGs/yes.svg" alt="Icon 1" class="icon" /></td>
+                    <td><img src="SVGs/yes.svg" alt="Icon 1" class="icon" /></td>
+                    <td><img src="SVGs/yes.svg" alt="Icon 1" class="icon" /></td>
+                    <td><img src="SVGs/yes.svg" alt="Icon 1" class="icon" /></td>
+                    <td><img src="SVGs/yes.svg" alt="Icon 1" class="icon" /></td>
+                    <td><img src="SVGs/yes.svg" alt="Icon 1" class="icon" /></td>
+                    <td><img src="SVGs/yes.svg" alt="Icon 1" class="icon" /></td>
+                </tr>
+                <tr>
+                    <td>Annealing</td>
+                    <td>125°C 16h</td>
+                    <td>120°C 10h</td>
+                    <td>N/A</td>
+                    <td>100°C 16h</td>
+                    <td>100°C 16h</td>
+                    <td>100°C 16h</td>
+                    <td>100°C 16h</td>
+                    <td>N/A</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>

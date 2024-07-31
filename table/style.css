@@ -1,0 +1,85 @@
+body {
+    font-family: Inter, sans-serif;
+    margin: 20px;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 12px; /* Smaller font size */
+    font-family: Inter, sans-serif;
+}
+
+.comparison-table th, .comparison-table td {
+    border: 1px solid #C1C1C1;
+    padding: 20px;
+    text-align: center;
+}
+
+.comparison-table th {
+    background-color: #bdbdbd;
+    color: #333;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.comparison-table tbody tr:nth-child(even) {
+    background-color: #d6d6d6;
+}
+
+.comparison-table tbody tr:nth-child(odd) {
+    background-color: #d6d6d6;
+}
+
+.comparison-table tbody tr:hover {
+    background-color: #e2e2e2;
+}
+
+.comparison-table td small {
+    font-size: 10px; /* Smaller font size for small text */
+    color: #595959;
+}
+
+.bar-container {
+    width: 150px; /* Adjust width as needed */
+    height: 20px; /* Adjust height as needed */
+    background-color: #E5E5E5; /* Light grey background */
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin: 10px; /* Center align */
+}
+
+.bar {
+    display: block;
+    height: 100%;
+    background-color: #D1F701; /* Yellow-green color */
+    border-radius: 10px 0 0 10px;
+    position: relative;
+}
+
+.bar::before, .bar::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 80%; /* Adjust height as needed */
+    background-color: #333;
+    position: absolute;
+    opacity: 40%;
+    top: 10%; /* Adjust top position as needed */
+}
+
+.bar::before {
+    left: 50px; /* Adjust position as needed */
+}
+
+.bar::after {
+    left: 100px; /* Adjust position as needed */
+}
+
